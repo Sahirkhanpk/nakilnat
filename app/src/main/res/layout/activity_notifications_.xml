@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.Notifications_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:id="@+id/toolbarlay"
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+
+
+            android:background="@color/toolbar_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:id="@+id/back_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:padding="@dimen/activity_vertical_margin_half"
+                android:src="@drawable/ic_left_arrow" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center_vertical"
+                android:padding="@dimen/activity_vertical_margin_half"
+                android:text="Notifications"
+                android:textColor="@color/toolbar_title"
+                android:textSize="@dimen/text_large" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbarlay"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/btn_current"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_42sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+
+
+
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/read_all_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="end"
+                   android:padding="@dimen/_5sdp"
+                    android:text="READ ALL"
+                    android:textColor="@color/toolbar_bg"
+                    android:textSize="@dimen/text_medium" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_apply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="center"
+
+
+                >
+
+                <androidx.recyclerview.widget.RecyclerView
+
+
+                    android:id="@+id/rv_notifications"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layoutAnimation="@anim/layout_animation_fall_down"
+
+                    android:orientation="vertical"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

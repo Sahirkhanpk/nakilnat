@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.PaymentHistoryctivity"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:background="@color/toolbar_bg"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+
+
+        android:orientation="horizontal"
+        android:id="@+id/toolbarlay">
+
+        <ImageView
+
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:src="@drawable/ic_left_arrow"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:text="Payment History"
+            android:textColor="@color/toolbar_title"
+            android:textSize="@dimen/text_large"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+
+    </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="@dimen/_20sdp"
+       android:layout_marginEnd="@dimen/_20sdp"
+      android:gravity="center_vertical"
+       android:layout_marginTop="@dimen/_30sdp"
+      >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Total number of visits"
+
+           android:fontFamily="@font/poppins_bold"
+           android:textSize="@dimen/_17sdp"
+           android:textColor="@color/colorTextBlack"
+     android:layout_marginEnd="@dimen/_10sdp"
+           />
+
+
+
+       <RelativeLayout
+           android:layout_width="@dimen/_30sdp"
+           android:layout_height="@dimen/_30sdp"
+
+         >
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/user_avatar"
+               android:layout_width="@dimen/_30sdp"
+               android:layout_height="@dimen/_30sdp"
+               android:layout_gravity="center_horizontal"
+               android:src="@color/colorPrimaryshade"
+               app:civ_border_color="@color/light_grey"
+               app:civ_border_width="@dimen/_4sdp"
+              />
+
+           <TextView
+               android:layout_width="@dimen/_50sdp"
+               android:layout_height="@dimen/_50sdp"
+               android:layout_centerInParent="true"
+           android:id="@+id/tv_total_visits"
+               android:textSize="@dimen/text_medium"
+               android:fontFamily="@font/poppins_bold"
+               android:textColor="@color/colorPrimaryBlueText"
+               android:gravity="center"/>
+       </RelativeLayout>
+   </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/payment_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layoutAnimation="@anim/layout_animation_fall_down"
+android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

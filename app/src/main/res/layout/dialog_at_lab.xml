@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_10sdp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+
+        android:id="@+id/layout_call">
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/stuff_call"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_30sdp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make a call"
+        android:textColor="@color/colorPrimaryText"
+        android:fontFamily="@font/poppins_semibold"
+     android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/_10sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout_call_back"
+        android:layout_height="@dimen/_50sdp"
+    >
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/call_back"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_30sdp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request a callback"
+            android:textColor="@color/colorPrimaryText"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"/>
+    </LinearLayout>
+
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="abchfhf"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:id="@+id/code"
+        android:textSize="@dimen/text_large"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryText"
+        android:fontFamily="@font/poppins_bold"/>
+    <TextView
+        android:layout_width="@dimen/_170sdp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryText"
+        android:text="Please share the verification code with staff in order to collect your test sample"/>-->
+</LinearLayout>

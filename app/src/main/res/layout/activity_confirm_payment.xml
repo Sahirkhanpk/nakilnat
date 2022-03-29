@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.ConfirmPaymentActivity"
+    android:background="@color/colorWhite">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:background="@color/toolbar_bg"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+
+
+        android:orientation="horizontal"
+        android:id="@+id/toolbarlay">
+
+        <ImageView
+
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:src="@drawable/ic_left_arrow"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:text="Confirm Payment"
+            android:textColor="@color/toolbar_title"
+            android:textSize="@dimen/text_large"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarlay"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOTAL PAYABLE AMOUNT"
+
+           android:textSize="@dimen/text_medium"
+            android:textColor="@color/colorTextBlack"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PKR 0"
+
+            android:textSize="@dimen/text_large"
+            android:textColor="@color/colorTextBlack"
+            android:fontFamily="@font/poppins_bold"
+            android:id="@+id/lebel_price"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp">
+            <EditText
+                android:id="@+id/et_cash"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+
+                android:background="@drawable/rounded_corner_edittext"
+
+                android:imeOptions="actionNext"
+
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="@dimen/_4sdp"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/_9sdp"  />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+          android:text="Cash"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginStart="@dimen/_10sdp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/rounded_corner_edittext"
+            >
+
+            <EditText
+
+                android:id="@+id/et_visa_card"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+
+                android:background="@drawable/rounded_corner_edittext"
+
+                android:imeOptions="actionNext"
+
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="@dimen/_4sdp"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/_9sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit Card / Jazz Cash"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginStart="@dimen/_10sdp"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_alignParentBottom="true">
+
+       <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_8sdp"
+        android:background="@color/light_grey"
+     android:layout_marginStart="@dimen/_10sdp"
+           android:layout_marginEnd="@dimen/_10sdp"
+
+        android:id="@+id/view_personal_info"
+        />
+
+    <EditText
+android:id="@+id/et_apply_promo_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/rounded_corner_edittext_black"
+android:layout_marginTop="@dimen/_20sdp"
+
+        android:imeOptions="actionNext"
+android:text="ENTER PROMO CODE"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:padding="@dimen/_4sdp"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="@dimen/_14sdp"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+android:id="@+id/layout_add_test"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+
+        android:background="@drawable/rounded_button_primary_color" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Payment"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="@dimen/text_small"/>
+
+    </LinearLayout>
+   </LinearLayout>
+</RelativeLayout>

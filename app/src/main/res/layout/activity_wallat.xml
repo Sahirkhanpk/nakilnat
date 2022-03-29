@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.WallatActivity"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:background="@color/toolbar_bg"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+
+
+        android:orientation="horizontal"
+        android:id="@+id/toolbarlay"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:src="@drawable/ic_left_arrow"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:text="My Wallet"
+            android:textColor="@color/toolbar_title"
+            android:textSize="@dimen/text_large"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_below="@+id/toolbarlay"
+            android:gravity="bottom|center"
+            android:id="@+id/layout_current_ballance"
+            android:orientation="vertical"
+
+
+           >
+            <TextView
+                android:id="@+id/ballance_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_4sdp"
+
+
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/_19sdp"
+                android:fontFamily="@font/poppins_bold"
+                />
+            <TextView
+                android:id="@+id/current_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_4sdp"
+                android:text="Current Balance"
+
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_medium"
+
+                />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_grey"
+            android:id="@+id/view"
+android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/layout_current_ballance"
+            />
+
+
+        <TextView
+          android:layout_marginTop="@dimen/text_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingStart="@dimen/_4sdp"
+android:id="@+id/tv_transection_history"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_4sdp"
+            android:text="Transaction History"
+android:layout_below="@+id/view"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/text_large"
+
+            />
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/payment_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:layout_below="@+id/tv_transection_history"
+            android:layoutAnimation="@anim/layout_animation_fall_down"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

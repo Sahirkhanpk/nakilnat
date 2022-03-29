@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.Completed_tasks_Activity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:background="@color/toolbar_bg"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+
+
+        android:orientation="horizontal"
+        android:id="@+id/toolbarlay">
+
+        <ImageView
+
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:src="@drawable/ic_left_arrow"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/back_img"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:text="Back"
+            android:textColor="@color/toolbar_title"
+            android:textSize="@dimen/text_large"
+
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+
+    </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_completed"
+          android:layout_below="@+id/toolbarlay">
+            <TextView
+                android:id="@+id/completed_task_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="9dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingStart="@dimen/_15sdp"
+
+                android:text="COMPLETED"
+                android:textColor="@color/colorPrimaryBlueTexttwo"
+                android:textSize="@dimen/_13sdp" />
+            <TextView
+                android:id="@+id/new_task_date_completed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="9dp"
+
+                android:paddingStart="@dimen/_15sdp"
+                android:text="15 Sep 2021"
+                android:textColor="@color/colorPrimaryTexttwo"
+                android:textSize="@dimen/_11sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/completed_task_rv"
+            android:layout_below="@+id/layout_completed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutAnimation="@anim/layout_animation_fall_down"
+
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+
+
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

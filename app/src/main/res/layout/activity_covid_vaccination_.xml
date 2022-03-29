@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.Covid_vaccination_Activity"
+    android:orientation="vertical"
+    android:background="@color/colorWhite" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:background="@color/toolbar_bg"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+
+
+        android:orientation="horizontal"
+        android:id="@+id/toolbarlay">
+
+        <ImageView
+
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:src="@drawable/ic_close_white"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/back_img"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:text="Covid-19 Vaccination"
+            android:textColor="@color/toolbar_title"
+            android:textSize="@dimen/text_large"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/layout_personal_information"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="First name"
+                        android:textColor="@color/colorPrimaryTexttwo"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="@dimen/_11sdp"
+                        android:padding="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"/>
+                    <EditText
+                        android:id="@+id/first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:textSize="@dimen/_9sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:background="@drawable/rounded_corner_edittext"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last name"
+                        android:textColor="@color/colorPrimaryTexttwo"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="@dimen/_11sdp"
+                        android:padding="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_5sdp"/>
+                    <EditText
+                        android:id="@+id/last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:textSize="@dimen/_9sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:background="@drawable/rounded_corner_edittext"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile number"
+                        android:textColor="@color/colorPrimaryTexttwo"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="@dimen/_11sdp"
+                        android:padding="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_5sdp"/>
+                    <EditText
+                        android:id="@+id/et_mobile_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:textSize="@dimen/_9sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:background="@drawable/rounded_corner_edittext"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email (optional)"
+                        android:textColor="@color/colorPrimaryTexttwo"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="@dimen/_11sdp"
+                        android:padding="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_5sdp"/>
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:textSize="@dimen/_9sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:background="@drawable/rounded_corner_edittext"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add address"
+                        android:textColor="@color/colorPrimaryTexttwo"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="@dimen/_11sdp"
+                        android:padding="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_5sdp"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <EditText
+                            android:id="@+id/et_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+
+                            android:background="@drawable/rounded_corner_edittext"
+
+                            android:imeOptions="actionNext"
+
+
+                            android:padding="@dimen/_4sdp"
+                            android:textColor="@color/colorSecondaryText"
+                            android:textSize="@dimen/_9sdp"  />
+                        <RelativeLayout
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/layout_select_location"
+
+                            android:background="@drawable/rounded_corners_gray"
+                            android:layout_marginEnd="@dimen/_5sdp">
+                            <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_location"
+                            android:layout_centerVertical="true"
+                            android:layout_centerInParent="true"
+
+                            android:id="@+id/img_select_location"/>
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp">
+                        <LinearLayout
+                            android:layout_width="@dimen/_110sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Appointment date"
+                                android:textColor="@color/colorPrimaryTexttwo"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:textSize="@dimen/_11sdp"
+                                android:padding="@dimen/_2sdp"
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+                                <EditText
+                                    android:id="@+id/et_appointment_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp"
+
+                                    android:background="@drawable/rounded_corner_edittext"
+
+                                    android:imeOptions="actionNext"
+
+                                    android:cursorVisible="false"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:padding="@dimen/_4sdp"
+                                    android:textColor="@color/colorSecondaryText"
+                                    android:textSize="@dimen/_9sdp"  />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/calendar"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_115sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Appointment date 2"
+                                android:textColor="@color/colorPrimaryTexttwo"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:textSize="@dimen/_11sdp"
+                                android:padding="@dimen/_2sdp"
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+                                <EditText
+                                    android:id="@+id/et_date_of_birth"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp"
+
+                                    android:background="@drawable/rounded_corner_edittext"
+
+                                    android:imeOptions="actionNext"
+
+                                    android:cursorVisible="false"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:padding="@dimen/_4sdp"
+                                    android:textColor="@color/colorSecondaryText"
+                                    android:textSize="@dimen/_9sdp"  />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/calendar"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+
+
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp">
+                        <LinearLayout
+                            android:layout_width="@dimen/_110sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Appointment time"
+                                android:textColor="@color/colorPrimaryTexttwo"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:textSize="@dimen/_11sdp"
+                                android:padding="@dimen/_2sdp"
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+                                <EditText
+                                    android:id="@+id/et_appointment_time"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp"
+
+                                    android:background="@drawable/rounded_corner_edittext"
+
+                                    android:imeOptions="actionNext"
+
+                                    android:cursorVisible="false"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:padding="@dimen/_4sdp"
+                                    android:textColor="@color/colorSecondaryText"
+                                    android:textSize="@dimen/_9sdp"  />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_down"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_115sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Appointment time 2"
+                                android:textColor="@color/colorPrimaryTexttwo"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:textSize="@dimen/_11sdp"
+                                android:padding="@dimen/_2sdp"
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+                                <EditText
+                                    android:id="@+id/et_appointment_time_two"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp"
+
+                                    android:background="@drawable/rounded_corner_edittext"
+
+                                    android:imeOptions="actionNext"
+
+                                    android:cursorVisible="false"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:padding="@dimen/_4sdp"
+                                    android:textColor="@color/colorSecondaryText"
+                                    android:textSize="@dimen/_9sdp"  />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_down"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:gravity="center"
+                android:layout_gravity="center"
+
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:id="@+id/layout_continue"
+
+                android:backgroundTint="@color/colorPrimary"
+
+                android:background="@drawable/rounded_corners_white"
+                android:layout_marginTop="@dimen/_50sdp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book now"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/text_medium"/>
+
+            </LinearLayout>
+
+                </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
+
+
+
+

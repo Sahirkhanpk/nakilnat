@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.PromoCodesActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:background="@color/toolbar_bg"
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+
+
+
+            android:orientation="horizontal"
+            android:id="@+id/toolbarlay">
+
+            <ImageView
+
+                android:padding="@dimen/activity_vertical_margin_half"
+                android:src="@drawable/ic_left_arrow"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/back_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="@dimen/activity_vertical_margin_half"
+                android:text="Promo"
+                android:textColor="@color/toolbar_title"
+                android:textSize="@dimen/text_large"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginStart="@dimen/_5sdp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_buttons"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@+id/toolbarlay"
+            android:layout_marginTop="@dimen/_10sdp">
+            <LinearLayout
+                android:layout_width="@dimen/_128sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/rounded_corners_search"
+
+
+
+                android:id="@+id/btn_current">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current"
+android:id="@+id/txt_current"
+                    android:textColor="@color/colorPrimaryText"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/text_small"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/_128sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+
+                android:id="@+id/btn_past"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/churus_button"
+
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Past"
+android:id="@+id/txt_past"
+                    android:textColor="@color/colorPrimaryText"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/text_small"
+                    />
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/promo_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+android:layout_below="@+id/layout_buttons"
+            android:layoutAnimation="@anim/layout_animation_fall_down"
+
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

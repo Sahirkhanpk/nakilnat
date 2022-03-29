@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.select_docter_names_activity"
+    android:background="@color/colorWhite"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:background="@color/toolbar_bg"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+
+
+        android:orientation="horizontal"
+        android:id="@+id/toolbarlay">
+
+        <ImageView
+
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:src="@drawable/ic_left_arrow"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/back_pointer"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:text="Docters List"
+            android:textColor="@color/toolbar_title"
+            android:textSize="@dimen/text_large"
+
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+
+
+    </LinearLayout>
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/idSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_43sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/rounded_gary_stoke"
+
+
+        app:searchIcon="@drawable/search"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:iconifiedByDefault="false"
+        android:layout_below="@+id/toolbarlay"
+        app:queryHint="Search report"
+
+
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tests_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:visibility="gone"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_below="@+id/idSearchView">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:id="@+id/layout_add"
+android:visibility="gone"
+        android:backgroundTint="@color/colorPrimary"
+
+        android:background="@drawable/rounded_corners_white"
+        android:layout_marginTop="@dimen/_5sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="@dimen/text_small"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

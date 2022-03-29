@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.All_reports_Activity"
+    android:orientation="vertical"
+    android:background="@color/colorWhite" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:background="@color/toolbar_bg"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+
+
+        android:orientation="horizontal"
+        android:id="@+id/toolbarlay">
+
+        <ImageView
+
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:src="@drawable/ic_left_arrow"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:text="All Reports"
+            android:textColor="@color/toolbar_title"
+            android:textSize="@dimen/text_large"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+
+    </LinearLayout>
+
+   <!-- <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/_151sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical"
+                    android:id="@+id/self_information"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Self"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/colorPrimaryBlueText"
+                        android:id="@+id/lebel_personal"
+                        android:textSize="@dimen/text_medium"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_below="@+id/layout_item"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:id="@+id/view_personal_info"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_151sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical"
+                    android:id="@+id/other_information"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Others"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/colorPrimaryText"
+                        android:id="@+id/lebel_other"
+                        android:textSize="@dimen/text_medium"
+                        android:fontFamily="@font/poppins_semibold"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/light_grey"
+                        android:id="@+id/view_flight_info"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="center"
+android:visibility="gone"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_40sdp"
+                   android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:background="@drawable/rounded_corner_edittext"
+                    android:backgroundTint="@color/very_light_grey"
+                    android:elevation="@dimen/_4sdp">>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/img_cal"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/calendar"
+                        android:layout_centerVertical="true"
+android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                       />
+                    <TextView
+                        android:id="@+id/et_date_of_birth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_centerVertical="true"
+
+android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:text="Search date"
+
+
+android:fontFamily="@font/poppins_regular"
+                        android:padding="@dimen/_4sdp"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/_13sdp"  />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:background="@drawable/rounded_corner_edittext"
+                    android:backgroundTint="@color/very_light_grey"
+                    android:elevation="@dimen/_4sdp">
+
+                    <TextView
+                        android:id="@+id/et_section"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_centerVertical="true"
+
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:text="Choose section"
+android:layout_alignParentStart="true"
+
+                        android:fontFamily="@font/poppins_regular"
+                        android:padding="@dimen/_4sdp"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/_13sdp"  />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_down"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/_5sdp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/light_grey"
+                android:id="@+id/view"
+                android:layout_marginTop="@dimen/_7sdp"
+
+          />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/all_reports_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/all_reports_other_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+  <!--  </androidx.core.widget.NestedScrollView>-->
+</LinearLayout>

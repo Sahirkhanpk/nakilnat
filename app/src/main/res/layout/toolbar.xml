@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:background="@color/toolbar_bg"
+
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+
+
+
+    android:orientation="horizontal"
+    android:id="@+id/toolbarlay">
+
+    <ImageView
+
+        android:padding="@dimen/activity_vertical_margin_half"
+        android:src="@drawable/ic_close_white"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/back_img"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_5sdp"
+       />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:padding="@dimen/activity_vertical_margin_half"
+        android:text="Covid-19 Pre-Flight Test"
+        android:textColor="@color/toolbar_title"
+        android:textSize="@dimen/text_large"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginStart="@dimen/_5sdp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,337 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="fragment.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/light_grey"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/light_grey">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/incoming_rv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_17sdp"
+                        android:layout_marginLeft="@dimen/_17sdp">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                    <TextView
+                        android:id="@+id/tv_order_type_not_prepared"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                      android:paddingStart="@dimen/_20sdp"
+                        android:text="RECENT REPORTS"
+
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_small"
+                        android:fontFamily="@font/poppins_bold"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/reports_rv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_160sdp"
+android:background="@drawable/rounded_corners"
+
+                        android:layout_marginRight="@dimen/_17sdp"
+                        android:layout_marginLeft="@dimen/_17sdp">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+                    <!--
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/not_prepared_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:nestedScrollingEnabled="false"
+                        >
+
+                    </android.support.v7.widget.RecyclerView>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_17sdp"
+                    android:layout_marginLeft="@dimen/_17sdp"
+                    android:background="@drawable/rounded_corners"
+                    android:orientation="horizontal"
+                    android:id="@+id/layout_covid">
+                    <LinearLayout
+                        android:layout_width="@dimen/_210sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/report_ready_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:paddingEnd="@dimen/_4sdp"
+android:fontFamily="@font/poppins_bold"
+                            android:text="PRE-REGISTER"
+                            android:textColor="@color/colorTextBlack"
+                            android:textSize="@dimen/_8sdp" />
+
+
+
+
+                        <TextView
+                            android:id="@+id/test_type_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:paddingEnd="@dimen/_4sdp"
+                            android:text="COVID 19 PRE-FIGHT TEST"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_small"
+                            android:fontFamily="@font/poppins_bold"/>
+
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/airoplan"
+                         />
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_17sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:background="@drawable/rounded_corners"
+                        android:orientation="horizontal"
+                        android:id="@+id/layout_covid_vaccination"
+                      android:visibility="gone" >
+                        <LinearLayout
+                            android:layout_width="@dimen/_210sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:orientation="vertical"
+                            android:gravity="center_vertical"
+                            >
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/_4sdp"
+                                android:paddingEnd="@dimen/_4sdp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="BOOK AN APPOINTMENT"
+                                android:textColor="@color/colorTextBlack"
+                                android:textSize="@dimen/_8sdp" />
+
+
+
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:paddingStart="@dimen/_4sdp"
+                                android:paddingEnd="@dimen/_4sdp"
+                                android:text="COVID 19 VACCINATION"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_small"
+                                android:fontFamily="@font/poppins_bold"
+                                android:textStyle="bold"/>
+
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/covid_vacine"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/_50sdp"
+                        android:layout_marginRight="@dimen/_17sdp"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:background="@drawable/rounded_corners"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                          >
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_210sdp"
+                            android:layout_height="@dimen/_90sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:orientation="vertical"
+                            android:gravity="center_vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/_4sdp"
+                                android:paddingEnd="@dimen/_4sdp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="EARN LOYALTY POINTS ON EVERY REFERRAL"
+                                android:textColor="@color/colorTextBlack"
+                                android:textSize="@dimen/_8sdp" />
+
+
+
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:paddingStart="@dimen/_4sdp"
+                                android:paddingEnd="@dimen/_4sdp"
+                                android:text="Refer to a friend or family member"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_small"
+                                android:fontFamily="@font/poppins_bold"
+                                android:textStyle="bold"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:gravity="center_vertical">
+
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/_4sdp"
+                                android:paddingEnd="@dimen/_40sdp"
+
+                                android:text="Referral Code"
+                                android:textColor="@color/colorTextBlack"
+                                android:textSize="@dimen/_8sdp" />
+                            <LinearLayout
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:gravity="center"
+
+                                android:layout_gravity="center"
+                                android:background="@drawable/rounded_corners_gray">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                  android:id="@+id/refrel_code"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:textSize="@dimen/text_small"
+                                    />
+
+                            </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:src="@drawable/shareicon"
+                              android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:id="@+id/img_share"/>
+                        </LinearLayout>
+
+                        <!--<ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/shareicon"
+                            />-->
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+                  <!--  <LinearLayout
+                        android:id="@+id/llNoRecords"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_100sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_hour_glass" />
+                    </LinearLayout>-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/nunito_semi_bold"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/_13sdp" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </RelativeLayout>
+
+</FrameLayout>

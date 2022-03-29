@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.Contact_us_Activity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:background="@color/toolbar_bg"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+
+
+        android:orientation="horizontal"
+        android:id="@+id/toolbarlay">
+
+        <ImageView
+
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:src="@drawable/ic_left_arrow"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:text="Contact Us"
+            android:textColor="@color/toolbar_title"
+            android:textSize="@dimen/text_large"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbarlay"
+
+android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:orientation="vertical"
+            android:id="@+id/layout_txt">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact us"
+android:layout_marginTop="@dimen/_10sdp"
+
+                android:textSize="@dimen/_15sdp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/colorPrimaryText"
+                android:id="@+id/txt_msg_title"/>
+            <TextView
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:text="Give us a call or write us your complain or query via mail, we will get back to you at the earliest"
+android:layout_marginTop="@dimen/_5sdp"
+android:textSize="@dimen/text_small_large"
+                android:id="@+id/txt_msg_detail"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/colorPrimaryText"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:id="@+id/layout_buttons"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@+id/layout_txt"
+            android:layout_marginTop="@dimen/_10sdp">
+            <LinearLayout
+                android:layout_width="@dimen/_128sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/rounded_corners_gray_bg"
+
+
+                android:id="@+id/email">
+                <ImageView
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:src="@drawable/mail"
+
+                    android:id="@+id/icon"
+                    android:layout_marginEnd="@dimen/_7sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email us"
+
+                    android:textColor="@color/colorPrimaryBlueText"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/text_small"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/_128sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+
+android:id="@+id/call"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/rounded_corners_gray_bg"
+
+
+           >
+                <ImageView
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:src="@drawable/phone"
+
+
+                    android:layout_marginEnd="@dimen/_7sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Call us"
+
+                    android:textColor="@color/colorPrimaryBlueText"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/text_small"
+                    />
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+
+android:layout_below="@+id/layout_buttons"
+           android:padding="@dimen/_10sdp"
+            android:background="@drawable/rounded_corners_message_bg"
+            android:textColor="@color/colorPrimaryText"
+         android:id="@+id/txt_msg"
+            android:textSize="@dimen/text_small_large"
+android:gravity="start"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+          android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_size"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/layout_msg"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+android:layout_below="@+id/txt_msg"
+            android:background="@drawable/rounded_button_primary_color" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send message"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="@dimen/text_small"/>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="@dimen/_128sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:gravity="center"
+android:visibility="gone"
+android:id="@+id/call_button"
+android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:background="@drawable/rounded_corners_gray_bg"
+
+
+           android:backgroundTint="@color/colorTransparent" >
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/phone"
+
+
+                android:layout_marginEnd="@dimen/_7sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call us"
+
+                android:textColor="@color/colorPrimaryBlueText"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="@dimen/text_medium"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

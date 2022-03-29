@@ -1,0 +1,378 @@
+<resources>
+    <string name="app_name">Nakilnat</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="oops_no_internet">Oops! No internet connection</string>
+    <string name="alert_log_out">Are you sure you want to logout?</string>
+    <string name="cancelled">Cancel</string>
+    ////////
+    <string name="break_">Break</string>
+    <string name="select_vehicle">"Select vehicle"</string>
+    <!--    <string name="turn_on_start_shift">"Turn on Start &shift; to go for delivery"</string>-->
+    <string name="no_results">"No Results"</string>
+    <string name="notice_board">"Notice Board"</string>
+    <string name="check_your_internet_connection">"Please check your Internet connection"</string>
+    <string name="waiting_for_new_task">"Waiting for the new task"</string>
+    <string name="terms_and_conditions">"Terms and Conditions"</string>
+
+    <string name="connect_to_network">Connect to network or quit</string>
+    <string name="connect_to_wifi">Connect to WIFI</string>
+    <string name="quit">Quit</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--    <string name="new_order_request">"New &order; Request"</string>-->
+    <string name="deliver">"Delivered"</string>
+    <string name="delivered">"Delivered"</string>
+    <!--    <string name="order_delivered_successfully">"&order; Delivered Successfully"</string>-->
+    <!--  <string name="order">"&order;"</string>-->
+    <!-- <string name="orders">"&order;s"</string>-->
+    <string name="new_task">New Task</string>
+    <string name="completed_tasks">Completed Tasks</string>
+    <!--   <string name="new_order_txt">New &order; request</string>-->
+    <string name="time_left">Time Left</string>
+    <string name="time_left_txt">120 secs left</string>
+    <string name="started_restaurant">STARTED TOWARDS RESTAURANT</string>
+    <string name="verification_code_txt">Verification Code</string>
+    <string name="continu">Continue</string>
+    <string name="verified_success">Verification Successful</string>
+    <string name="verification_code_send">Verification Code Sent On Your Number</string>
+    <!--  <string name="start_shift">Start &shift;</string>
+    <string name="shift_status">&shift; Status</string>
+    <string name="end_shift">End &shift;</string>-->
+    <string name="vehicle_number">Enter the vehicle number</string>
+    <string name="name">Name</string>
+    <string name="user_id">User ID</string>
+    <string name="email">Email Address</string>
+    <string name="update">Update</string>
+    <string name="enter_mobile_number">"Enter Mobile Number"</string>
+    <string name="reached_distination">"REACHED DESTINATION"</string>
+    <string name="reached_restaurant">"REACHED RESTAURANT"</string>
+    <!--    <string name="order_picked_up">"&order; PICKED UP"</string>-->
+    <string name="picked_up">"PICKED UP"</string>
+    <!--  <string name="order_delivered">"&order;  Delivered"</string>-->
+    <string name="payment_received">"Payment Received"</string>
+    <string name="back">"Back"</string>
+    <string name="profile">"Profile"</string>
+    <!--  <string name="order_history">"&order; History"</string>
+    <string name="order_message">&order; #%d</string>-->
+    <string name="you_owed">"You Owed "</string>
+    <string name="item_total">"Item Total"</string>
+    <string name="service_tax">"Service Tax"</string>
+    <string name="delivery_charges">"Delivery Charges"</string>
+    <string name="discount">"Shop Discount"</string>
+    <string name="promocode_amount">"Promocode Amount"</string>
+    <string name="total">"Total"</string>
+    <string name="payment_mode">"Payment "</string>
+    <string name="no_of_items">"No. of Items"</string>
+    <string name="bill_amount">"Bill Amount"</string>
+    <string name="bill_paid">"Bill Paid"</string>
+    <string name="returned">"Returned"</string>
+    <string name="other">"Other"</string>
+    <string name="reason">"Reason"</string>
+    <string name="chat_us">"Chat us"</string>
+    <string name="call_us">"Call us"</string>
+    <string name="please_type_the_verification_code">"Please type the verification code sent to your"</string>
+    <string name="amount_to_be_paid">"Amount to be paid"</string>
+    <string name="please_handover_the_amount_earned">"Please handover the amount earned"</string>
+    <string name="please_settle_the_amount_to_the_respective_restaurant">"Please settle the amount to the respective restaurant"</string>
+    <string name="type_a_message">"Type a message"</string>
+    <string name="country_name">"Country name"</string>
+    <string name="feedback">"Feedback"</string>
+    <string name="how_was_the_delivery">"How was the delivery?"</string>
+    <string name="terrible">"Terrible"</string>
+    <string name="bad">"Bad"</string>
+    <string name="okay">"Okay"</string>
+    <string name="ok">"Ok"</string>
+    <string name="good">"Good"</string>
+    <string name="superb">"Superb"</string>
+    <string name="give_some_feedback_in_words">"Give some feedback in words."</string>
+    <string name="submit">"Submit"</string>
+    <string name="report">"Report"</string>
+    <string name="dispute">"Dispute"</string>
+    <string name="help">"Help"</string>
+    <string name="amount_to_pay">"Amount to Pay"</string>
+    <string name="otp">Otp</string>
+    <string name="enter_otp">Please enter otp</string>
+    <string name="invalid_otp">Invalid Otp</string>
+    <string name="full_amount">Please enter full amount</string>
+    <string name="enter_the_amount_paid">Enter the amount paid</string>
+    <string name="balance">"Balance"</string>
+    <string name="paid">"Paid"</string>
+    <string name="user">"User"</string>
+    <!--    <string name="shift">"&shift;"</string>-->
+    <string name="source">Source</string>
+    <string name="destination">Destination</string>
+    <string name="order_status">Order Status</string>
+    <string name="upload_photo">Upload Photo</string>
+    <string name="call">Call</string>
+    <string name="navigation">Navigation</string>
+    <string name="network_error">Could not connect to internet!</string>
+    <string name="shop">Shop</string>
+    <string name="change_language">Change Language</string>
+    <string name="please_start_shift">Please start the shift</string>
+    <string name="cash">Cash</string>
+    <string name="card">Card</string>
+    <string name="order_cancelled">Order Cancelled</string>
+    <string name="the_order_has_been_cancelled_by_user">The order has been cancelled by user</string>
+    <string name="register">Register</string>
+    <string name="Enter">Enter</string>
+
+
+    <string name="please_enter_mail_id">Please enter mail id</string>
+    <string name="please_enter_valid_mail_id">Please enter valid mail id</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="please_enter_new_password">Please enter new password</string>
+    <string name="please_enter_minimum_length_password">Please enter atleast 6 characters in password</string>
+    <string name="please_enter_name">Please enter first name and last name</string>
+    <string name="please_enter_phone_number">Please enter phone number</string>
+
+    <string name="please_enter_valid_phoneNumber">Please enter valid phone number</string>
+
+
+    <string name="please_enter_confirm_password">Please enter confirm password</string>
+    <string name="password_and_confirm_password_doesnot_match">Password and Confirm Password doesn\'t match!</string>
+    <string name="confirm">Confirm</string>
+    <string name="please_select_city">Please select city</string>
+
+    <string name="invalid_credentials">invalid credentials</string>
+
+    <string name="Update_Password">Update Password</string>
+    <string name="Completed_Task">Completed Task</string>
+    <string name="switch_off">switch Off</string>
+    <string name="logout">Logout</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="reject">Reject</string>
+    <string name="accept">Accept</string>
+    <string name="password">Password</string>
+
+    <string name="food_not_prepared">Food is not Prepared !</string>
+    <string name="lang_english">English</string>
+    <!--<item>Arabic</item>-->
+    <string name="lang_japnese">Japanese</string>
+    <string name="reason_facing">Are you facing any issue which we can assist with? Please reach out to us we will be happy to help !</string>
+    <string name="check_internet_connection">Check your internet connection</string>
+    <string name="no_luck">No Luck!</string>
+    <string name="please_enternumber_pswd">Please enter your Mobile number and Password</string>
+    <string name="select_country">Select Country</string>
+    <string name="success_profile">Profile Updated Successfully</string>
+    <string name="success_sign_up">Sign Up Successful</string>
+
+    <string name="success_member">Family profile added Successfully to your list.</string>
+    <string name="dont_pick_image">You haven\'t picked Image</string>
+    <string name="wallet_detection">Wallet Detection</string>
+    <string name="live_tasks">LIVE TASK</string>
+    <string-array name="gender">
+
+
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+
+
+    <string-array name="family">
+
+
+        <item>Mark Smith</item>
+        <item>Adam Smith</item>
+        <item>Mark Williams</item>
+        <item>Adam Williams</item>
+    </string-array>
+
+
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="airlines">
+        <item>Select airline</item>
+        <item>Pakistan International Airlines</item>
+
+        <item> Airblue</item>
+
+        <item> Serene Air</item>
+
+        <item> Saudi Airlines Saudia</item>
+
+        <item> Air Arabia</item>
+
+        <item> AirSial</item>
+
+        <item>  Gulf Air</item>
+
+        <item> Qatar Airways</item>
+
+        <item> Emirates</item>
+
+        <item> Fly Dubai</item>
+
+        <item> Thai Airways</item>
+
+        <item>  China Southern Airlines</item>
+
+    </string-array>
+
+    <string-array name="cities">
+
+
+        <item>Karachi</item>
+        <item> Lahore</item>
+        <item>Sialkot City</item>
+        <item>Faisalabad</item>
+        <item>Rawalpindi</item>
+        <item>Peshawar</item>
+        <item> Saidu Sharif</item>
+        <item> Multan</item>
+        <item>Gujranwala</item>
+        <item>Islamabad</item>
+        <item>Quetta</item>
+        <item>Bahawalpur</item>
+        <item> Sargodha</item>
+        <item>New Mirpur</item>
+        <item>Chiniot</item>
+        <item>Sukkur</item>
+        <item>Larkana</item>
+        <item>Shekhupura</item>
+        <item>Jhang City</item>
+        <item>Rahimyar Khan</item>
+        <item>Gujrat</item>
+        <item>Kasur</item>
+        <item>Mardan</item>
+        <item>Mingaora</item>
+        <item>Dera Ghazi Khan</item>
+        <item>Nawabshah</item>
+        <item>Sahiwal</item>
+        <item>Mirpur Khas</item>
+        <item>Okara</item>
+        <item>Mandi Burewala</item>
+        <item> Jacobabad</item>
+        <item>Saddiqabad</item>
+        <item> Kohat</item>
+        <item> Muridke</item>
+        <item> Muzaffargarh</item>
+        <item>Khanpur</item>
+        <item>  Gojra</item>
+        <item>  Mandi Bahauddin</item>
+        <item>Abbottabad</item>
+        <item>Dadu</item>
+        <item>Khuzdar</item>
+        <item> Pakpattan</item>
+        <item> Tando Allahyar</item>
+        <item> Vihari</item>
+        <item> Jaranwala</item>
+        <item>Kamalia</item>
+        <item>  Kot Addu</item>
+        <item> Nowshera</item>
+        <item> Swabi</item>
+        <item>Dera Ismail Khan</item>
+        <item>Chaman</item>
+        <item>Charsadda</item>
+        <item>Kandhkot</item>
+        <item> Hasilpur</item>
+        <item>Muzaffarabad</item>
+        <item> Mianwali</item>
+        <item> Jalalpur Jattan</item>
+        <item> Bhakkar</item>
+        <item> Zhob</item>
+        <item> Kharian</item>
+        <item> Mian Channun</item>
+        <item>Jamshoro</item>
+        <item>Pattoki</item>
+        <item>Harunabad</item>
+        <item> Toba Tek Singh</item>
+        <item>Shakargarh</item>
+        <item>Hujra Shah Muqim</item>
+        <item>Kabirwala</item>
+        <item>Mansehra</item>
+        <item>Lala Musa</item>
+        <item>Nankana Sahib</item>
+        <item>Bannu</item>
+        <item>Timargara</item>
+        <item>Parachinar</item>
+        <item>Gwadar</item>
+        <item>Abdul Hakim</item>
+        <item>Hassan Abdal</item>
+        <item>Tank</item>
+        <item>Hangu</item>
+        <item>Risalpur Cantonment</item>
+        <item>Karak</item>
+        <item>Kundian</item>
+        <item>Umarkot</item>
+        <item>Chitral</item>
+        <item>Dainyor</item>
+        <item>Kulachi</item>
+        <item>Kotli</item>
+        <item>Gilgit</item>
+        <item>Hyderabad City</item>
+        <item>Narowal</item>
+        <item>Khairpur Mir’s</item>
+        <item>Khanewal</item>
+        <item>Jhelum</item>
+        <item>Haripur</item>
+        <item>Shikarpur</item>
+        <item>Rawala Kot</item>
+        <item>Hafizabad</item>
+        <item>Lodhran</item>
+        <item>Malakand</item>
+        <item>Attock City</item>
+        <item>Batgram</item>
+        <item>Matiari</item>
+        <item>Ghotki</item>
+        <item>Naushahro Firoz</item>
+        <item>Alpurai</item>
+        <item>Bagh</item>
+        <item>Daggar</item>
+        <item>Bahawalnagar</item>
+        <item>Leiah</item>
+        <item>Tando Muhammad Khan</item>
+        <item>Chakwal</item>
+        <item>Khushab</item>
+        <item>Badin</item>
+        <item>Lakki</item>
+        <item>Rajanpur</item>
+        <item>Dera Allahyar</item>
+        <item>Shahdad Kot</item>
+        <item>Pishin</item>
+        <item>Sanghar</item>
+        <item>Upper Dir</item>
+        <item>Thatta</item>
+        <item>Dera Murad Jamali</item>
+        <item>Kohlu</item>
+        <item>Mastung</item>
+        <item>Dasu</item>
+        <item>Athmuqam</item>
+        <item>Loralai</item>
+        <item>Barkhan</item>
+        <item>Musa Khel Bazar</item>
+        <item>Ziarat</item>
+        <item>Gandava</item>
+        <item>Sibi</item>
+        <item>Dera Bugti</item>
+        <item> Eidgah</item>
+        <item>Turbat</item>
+        <item> Uthal</item>
+        <item>Khuzdar</item>
+        <item>Chilas</item>
+        <item> Kalat</item>
+        <item>Panjgur</item>
+        <item>Gakuch</item>
+        <item> Qila Saifullah</item>
+        <item>Kharan</item>
+        <item> Aliabad</item>
+        <item> Awaran</item>
+        <item> Dalbandin</item>
+
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>

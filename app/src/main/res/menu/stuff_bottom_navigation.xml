@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mi_home"
+        android:title="Anasayfa"
+        android:icon="@drawable/home_stuff"
+        />
+
+
+    <item android:id="@+id/mi_transport"
+        android:title="Tasimalanm"
+        android:icon="@drawable/location_icon"
+        android:iconTint="@color/colorPrimaryText"
+        />
+
+    <item android:id="@+id/mi_middle"
+        android:title="       "
+
+        android:icon="@drawable/plus_icon"
+        android:iconTint="@color/colorPrimaryText"
+        android:enabled="false"/>
+
+
+
+
+    <item android:id="@+id/mi_plus"
+        android:title="IIan Ekle"
+        android:icon="@drawable/plus_icon"
+        android:iconTint="@color/colorPrimaryText"/>
+
+
+
+    <item android:id="@+id/mi_account"
+        android:title="Profilim"
+        android:icon="@drawable/user_stuff"
+        android:iconTint="@color/colorPrimaryText"/>
+</menu>

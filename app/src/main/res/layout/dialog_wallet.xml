@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp">
+
+
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/wallet_on_icon"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_5sdp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Excel Pay"
+                android:id="@+id/txt_patient"
+                android:textColor="@color/colorPrimaryText"
+
+                android:textSize="@dimen/_20sdp"
+                />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use wallet credit"
+                android:id="@+id/txt_staff"
+                android:textColor="@color/colorPrimaryText"
+
+                android:textSize="@dimen/_10sdp"
+                />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_ballance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PKR 300"
+        android:textColor="@color/colorPrimaryText"
+android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:textSize="@dimen/_13sdp" />
+    <com.github.angads25.toggle.LabeledSwitch
+        android:id="@+id/switch2"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_22sdp"
+
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginStart="@dimen/_2sdp"
+        app:on="false"
+        app:textOn=""
+        app:textOff=""
+        app:colorOn="@color/colorPrimary"
+        app:colorBorder="@color/medium_grey"
+
+
+        />
+
+
+</LinearLayout>

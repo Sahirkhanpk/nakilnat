@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.Loyalty_points_Activity"
+    android:background="@color/colorWhite">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:background="@color/toolbar_bg"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+
+
+        android:orientation="horizontal"
+        android:id="@+id/toolbarlay">
+
+        <ImageView
+
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:src="@drawable/ic_left_arrow"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:text="Loyalty Points"
+            android:textColor="@color/toolbar_title"
+            android:textSize="@dimen/text_large"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarlay"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+      >
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/gift"
+           android:layout_marginTop="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/tv_total_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+
+       android:fontFamily="@font/poppins_bold"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/colorTextBlack"
+            android:layout_marginTop="@dimen/_20sdp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Earn points with every transaction and every referral.Move up in the tier and get exclusive benefits."
+android:gravity="center"
+android:fontFamily="@font/nunito_semi_bold"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorTextBlack"
+            android:id="@+id/tv_message"
+android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+         android:layout_marginTop="@dimen/_10sdp"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_exiting_offers"
+            android:text="EXCITING OFFERS"
+            android:layout_gravity="left"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_bold"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/offers_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layoutAnimation="@anim/layout_animation_fall_down"
+
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

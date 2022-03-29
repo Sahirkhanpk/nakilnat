@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/layoutLinearLayout"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp">
+
+    <SearchView
+        android:id="@+id/SearchET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false" />
+
+    &lt;!&ndash;<android.support.v4.widget.SwipeRefreshLayout&ndash;&gt;
+    &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+    &lt;!&ndash;android:id="@+id/swipeRefreshLt"&ndash;&gt;
+    &lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;
+
+    <ListView
+        android:id="@+id/Contacts_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    &lt;!&ndash;</android.support.v4.widget.SwipeRefreshLayout>&ndash;&gt;
+
+</LinearLayout>-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alertdialog_linearlayout"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@null">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#FFFFFF"
+        android:id="@+id/layout_main">
+
+        <TextView
+            android:id="@+id/alertdialog_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="search"
+            android:textColor="#000000"
+            android:textSize="16sp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="10dp"/>
+
+        <EditText
+            android:id="@+id/alertdialog_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:textStyle="normal"
+            android:textColorHint="#939598"
+            android:textColor="#4b4f54"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:maxLines="1"
+            android:textCursorDrawable="@null"
+            android:gravity="start"
+            android:inputType="text"
+            android:theme="@style/AppCompatAlertDialogStyle"
+            android:layout_gravity="start" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/docters_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_below="@+id/idSearchView">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dialog_cancel_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="X"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_corners"/>
+    <LinearLayout
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/rounded_corners_gray_bg"
+        android:layout_below="@+id/layout_main"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:id="@+id/add_new_member">
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_plus"
+            android:visibility="gone"
+            android:id="@+id/icon"
+            android:layout_marginEnd="@dimen/_7sdp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+  Add new member"
+
+            android:textColor="@color/colorPrimaryBlueText"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="@dimen/text_medium"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark Smith"
+
+android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+
+        android:textColor="@color/colorPrimaryText"
+      android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adam Smith"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+
+        android:textColor="@color/colorPrimaryText"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark Willams"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+
+        android:textColor="@color/colorPrimaryText"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jon broad"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+
+        android:textColor="@color/colorPrimaryText"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/rounded_corners_gray_bg"
+
+
+        android:id="@+id/add_new_member">
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_plus"
+android:visibility="gone"
+            android:id="@+id/icon"
+            android:layout_marginEnd="@dimen/_7sdp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+  Add new member"
+
+            android:textColor="@color/colorPrimaryBlueText"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="@dimen/text_medium"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking Confirmed"
+        android:textColor="@color/colorPrimaryText"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="abchfhf"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:id="@+id/code"
+        android:textSize="@dimen/text_large"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryText"
+        android:fontFamily="@font/poppins_bold"
+        android:visibility="gone"/>
+    <TextView
+        android:visibility="gone"
+        android:layout_width="@dimen/_170sdp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryText"
+        android:text="Please share the verification code with staff in order to collect your test sample"/>
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "332334319316",
+    "project_id": "nakilnat-ce7db",
+    "storage_bucket": "nakilnat-ce7db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332334319316:android:757ece1db54b42e7981d41",
+        "android_client_info": {
+          "package_name": "com.example.nakilnat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332334319316-cad3t9tke1quo67t9u3c7n45phk7ghl8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEzth5uBTQDATVdWgMTn1_CIu5L1UkbqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332334319316-cad3t9tke1quo67t9u3c7n45phk7ghl8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

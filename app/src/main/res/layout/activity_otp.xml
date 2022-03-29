@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    tools:context="activities.OTP">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/logo"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+
+        android:id="@+id/img_logo"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:visibility="gone"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_lay"
+        android:fillViewport="true"
+        android:layout_below="@+id/img_logo"
+        android:layout_marginTop="@dimen/_80sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_vertical_margin">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                android:text="Sign up"/>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:text="Enter verification code for "
+                android:textColor="@color/colorPrimaryTexttwo"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"/>
+
+
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/nunito_semi_bold"
+
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"/>
+</LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_70sdp"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:text="Verification code"
+                android:textColor="@color/colorPrimaryTexttwo"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"/>
+
+            <me.philio.pinentry.PinEntryView
+                android:id="@+id/otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="12dp"
+                app:accentType="character"
+                app:digitBackground="@drawable/otp_square"
+                app:digitHeight="50dp"
+                app:digitSpacing="20dp"
+                app:digitTextColor="@color/colorTextBlack"
+                app:digitTextSize="7sp"
+                app:digitWidth="50dp"
+                app:mask=""
+                app:numDigits="5"
+                app:pinInputType="number"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/continue_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_size"
+                android:layout_marginTop="@dimen/_30sdp"
+
+                android:background="@drawable/rounded_corners_white"
+                android:text="@string/Enter"
+                android:textColor="@color/colorWhite"
+                android:enabled="false"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:orientation="horizontal"
+                android:gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:id="@+id/layout_resent"
+
+             >
+                <TextView
+                    android:id="@+id/txt_resent"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:paddingLeft="@dimen/_4sdp"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+android:fontFamily="@font/nunito_semi_bold"
+                    android:text="Resend verification code in"
+                    android:textAllCaps="false"
+
+                    android:textColor="@color/colorPrimaryBlueText"
+                    android:textSize="@dimen/text_tiny" />
+
+                <View
+                    android:layout_width="130dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txt_register"
+                    android:background="@color/colorGreen"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:text="60 sec"
+                android:id="@+id/timer"
+                android:enabled="false"
+
+                android:textColor="@color/colorPrimaryTexttwo"
+                android:textSize="@dimen/text_tiny" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:text="Already have an account?"
+                android:textColor="@color/colorPrimaryTexttwo"
+                android:textSize="@dimen/text_tiny" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:id="@+id/layout_login">
+                <TextView
+                    android:id="@+id/txt_login"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:paddingLeft="@dimen/_4sdp"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+
+                    android:text="Log in"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorTheme"
+                    android:textSize="@dimen/text_tiny" />
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txt_register"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginStart="@dimen/_4sdp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

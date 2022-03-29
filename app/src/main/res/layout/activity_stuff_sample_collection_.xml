@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.Stuff_sample_collection_Activity"
+    android:background="@color/very_light_grey_two">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:background="@color/toolbar_bg"
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+
+
+
+            android:orientation="horizontal"
+            android:id="@+id/toolbarlay">
+
+            <ImageView
+
+                android:padding="@dimen/activity_vertical_margin_half"
+                android:src="@drawable/ic_left_arrow"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/back_img"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="@dimen/activity_vertical_margin_half"
+                android:text="Personal info"
+                android:textColor="@color/toolbar_title"
+                android:textSize="@dimen/text_large"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginStart="@dimen/_5sdp"/>
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/layout_today"
+            android:layout_below="@+id/toolbarlay">
+            <TextView
+                android:id="@+id/new_task_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="9dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingStart="@dimen/_15sdp"
+                android:text="SAMPLE COLLECTION"
+                android:textColor="@color/colorPrimaryBlueTexttwo"
+                android:textSize="@dimen/_13sdp" />
+            <TextView
+                android:id="@+id/new_task_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="9dp"
+
+                android:paddingStart="@dimen/_15sdp"
+                android:text="Select All"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/_11sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/test_details"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_240sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:elevation="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:background="@drawable/rounded_corners"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_below="@+id/layout_today">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/test_simples"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/switch4"
+    android:layout_below="@+id/test_details"
+    android:gravity="center"
+    android:layout_marginTop="@dimen/_10sdp">
+
+    <com.github.angads25.toggle.LabeledSwitch
+        android:id="@+id/switch1"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:textSize="@dimen/_13sdp"
+        app:colorOn="@color/colorPrimary"
+
+        app:on="true"
+        app:textOff="Cash"
+        app:textOn="Cash"
+        app:colorBorder="@color/medium_grey"
+
+
+        />
+
+    <com.github.angads25.toggle.LabeledSwitch
+        android:id="@+id/switch2"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_28sdp"
+
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:on="false"
+        app:textOn="Card"
+        app:textOff="Card"
+        app:colorOn="@color/colorPrimary"
+        app:colorBorder="@color/medium_grey"
+
+
+        />
+</LinearLayout>
+
+        <!--<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_group"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_below="@+id/test_details"
+            android:gravity="center">
+            <RadioButton android:id="@+id/radio_home_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/colorPrimaryTexttwo"
+         android:background="@drawable/rounded_corners"
+                android:backgroundTint="@color/colorPrimaryBlueText"
+
+
+                />
+            <RadioButton android:id="@+id/radio_at_lab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card"
+                android:textColor="@color/colorPrimaryTexttwo"
+                android:fontFamily="@font/poppins_bold"
+               />
+        </RadioGroup>-->
+      <!--  <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+   android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/test_details">
+
+            <Switch
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:text="Cash"
+
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="@dimen/_9sdp"
+                android:textColor="@color/colorPrimaryText"
+                android:background="@drawable/rounded_corners_white"
+                android:backgroundTint="@color/medium_grey"
+
+               android:layout_marginEnd="@dimen/_5sdp" />
+            <Switch
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:text="Card"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="@dimen/_9sdp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/rounded_corners_white"
+                android:backgroundTint="@color/colorPrimary"
+                style="?attr/materialButtonOutlinedStyle"
+               android:layout_marginStart="@dimen/_5sdp" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slip Invoice Number"
+            android:id="@+id/tv_invoice_number"
+            android:layout_below="@+id/switch4"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="@font/nunito_semi_bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_size"
+            android:gravity="center"
+            android:layout_gravity="center"
+
+            android:elevation="@dimen/_10sdp"
+            android:id="@+id/layout_add_test"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+
+            android:layout_below="@+id/tv_invoice_number"
+            android:background="@drawable/rounded_corners" >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+           android:gravity="center"
+                android:background="@color/colorTransparent"
+                android:textColor="@color/colorPrimaryBlueText"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="@dimen/text_large"
+                android:id="@+id/txt_slip_number"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount Collected"
+            android:id="@+id/tv_ammount"
+            android:layout_below="@+id/layout_add_test"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="@font/nunito_semi_bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_size"
+            android:gravity="center"
+            android:layout_gravity="center"
+
+            android:elevation="@dimen/_10sdp"
+            android:id="@+id/layout_account"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_below="@+id/tv_ammount"
+            android:background="@drawable/rounded_corners"
+       >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+android:id="@+id/txt_account_collected"
+                android:textColor="@color/colorPrimaryBlueText"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="@dimen/text_large"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_size"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:elevation="@dimen/_10sdp"
+            android:id="@+id/layout_conform_payment"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_below="@+id/layout_account"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/colorPrimaryBlueText">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm Payment"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="@dimen/text_large"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

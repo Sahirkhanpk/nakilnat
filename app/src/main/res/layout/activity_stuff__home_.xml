@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.Stuff_Home_Activity"
+    android:background="@color/very_light_grey_two">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:background="@color/toolbar_bg"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+
+
+        android:orientation="horizontal"
+        android:id="@+id/toolbarlay"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:src="@drawable/ic_left_arrow"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/back_img"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:text="Home"
+            android:textColor="@color/toolbar_title"
+            android:textSize="@dimen/text_large"
+
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/toolbarlay" >
+
+        <FrameLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_navigation"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </FrameLayout>
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+       android:layout_alignParentBottom="true"
+            android:id="@+id/bottom_navigation"
+            app:backgroundTint="@color/md_white_1000"
+
+
+            >
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@color/md_white_1000"
+                app:menu="@menu/stuff_bottom_navigation"
+
+                android:theme="@style/Widget.BottomNavigationView"
+
+                />
+
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+    </RelativeLayout>
+
+  <!--  <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_grey"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@color/colorWhite"
+            app:title="Home"
+            >
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/toolbar"
+
+
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingStart="@dimen/_15sdp"
+            android:text="Tasks Schedule"
+            android:textColor="@color/colorPrimaryBlueTexttwo"
+            android:textSize="@dimen/_22sdp" />
+
+        <TextView
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:id="@+id/tv_day_by_day"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/_12sdp"
+            android:paddingStart="@dimen/_15sdp"
+            android:text="Check your day to day priority tasks"
+            android:layout_gravity="center"
+            android:layout_below="@+id/tv_text"
+
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_day_by_day"
+            android:id="@+id/layout_banner"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+          >
+      &lt;!&ndash;  <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/shape"
+
+
+           android:layout_marginTop="@dimen/_5sdp"&ndash;&gt;
+  >
+          &lt;!&ndash;  <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+
+
+                android:layout_marginTop="@dimen/_5sdp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="5dp"
+                android:elevation="10dp">&ndash;&gt;
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+android:layout_centerInParent="true"
+android:adjustViewBounds="true"
+
+              android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:src="@drawable/rectangle"
+
+
+
+
+
+
+                />
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/beaker_white"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_15sdp"/>
+         &lt;!&ndash;   </androidx.cardview.widget.CardView>&ndash;&gt;
+    &lt;!&ndash;    </FrameLayout>&ndash;&gt;
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+
+
+              >
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_140sdp"
+             android:progress="20"
+                android:indeterminate="false"
+              style="?android:progressBarStyleHorizontal"
+
+                android:background="@color/colorTransparent"
+               android:progressDrawable="@drawable/circle_percentage"/>
+                <TextView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:id="@+id/text_show_percentage"
+                    android:text="30%"
+                    android:gravity="center"
+
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/text_large"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="@dimen/_140sdp"
+                android:id="@+id/status_of_task"
+                android:layout_height="wrap_content"
+                android:text="Status of tasks for today"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/poppins_semibold"
+         android:layout_centerInParent="true"
+                android:layout_alignParentStart="true"
+
+                android:layout_marginStart="@dimen/_30sdp"
+                android:textSize="@dimen/_17sdp"/>
+
+            <TextView
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content"
+                android:text="1 of 4 completed"
+                android:textColor="@color/light_grey"
+android:id="@+id/tv_completed"
+                android:layout_marginStart="@dimen/_35sdp"
+            android:layout_below="@+id/status_of_task"
+android:layout_marginTop="@dimen/_40sdp"
+
+                android:textSize="@dimen/_11sdp"/>
+
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/idSearchViewStuff"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+          android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/rounded_corners"
+            android:elevation="5dp"
+app:searchIcon="@drawable/search"
+
+            app:iconifiedByDefault="false"
+            app:queryHint="Search tasks..."
+
+            android:layout_below="@id/layout_banner"/>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/idSearchViewStuff"
+            android:layout_marginBottom="@dimen/_50sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_newtasklayout"
+                android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:layout_marginTop="@dimen/_15sdp"
+    android:id="@+id/layout_today"
+    android:visibility="gone">
+                <TextView
+                    android:id="@+id/new_task_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+android:layout_alignParentStart="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="9dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:text="TODAY"
+                    android:textColor="@color/colorPrimaryBlueTexttwo"
+                    android:textSize="@dimen/_13sdp" />
+    <TextView
+        android:id="@+id/new_task_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="9dp"
+
+        android:paddingStart="@dimen/_15sdp"
+        android:text="15 Sep 2021"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/_11sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/new_task_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutAnimation="@anim/layout_animation_fall_down"
+
+                        android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                    <LinearLayout
+                        android:id="@+id/error_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                      F android:visibility="gone" >
+
+                        <ImageView
+                            android:id="@+id/error_img"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="16dp" />
+
+                        <TextView
+                            android:id="@+id/error_message"
+                            fontPath="fonts/Nunito-Bold.ttf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="14sp"
+                            tools:ignore="MissingPrefix" />
+                    </LinearLayout>
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/completed_task_rootview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layout_tomorrow" android:visibility="gone">
+                    <TextView
+                        android:id="@+id/tomorrow_task_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_gravity="center"
+                        android:layout_marginTop="9dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="TOMMORROW"
+                        android:textColor="@color/colorPrimaryBlueTexttwo"
+                        android:textSize="@dimen/_13sdp" />
+                    <TextView
+                        android:id="@+id/new_task_date_tommorrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="9dp"
+
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="15 Sep 2021"
+                        android:textColor="@color/colorPrimaryTexttwo"
+                        android:textSize="@dimen/_11sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/tomorrow_task_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutAnimation="@anim/layout_animation_fall_down"
+
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+
+
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </LinearLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                android:id="@+id/layout_completed"
+                   android:visibility="gone">
+                    <TextView
+                        android:id="@+id/completed_task_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_gravity="center"
+                        android:layout_marginTop="9dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:paddingStart="@dimen/_15sdp"
+
+                        android:text="COMPLETED"
+                        android:textColor="@color/colorPrimaryBlueTexttwo"
+                        android:textSize="@dimen/_13sdp" />
+                    <TextView
+                        android:id="@+id/new_task_date_completed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="9dp"
+
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="15 Sep 2021"
+                        android:textColor="@color/colorPrimaryTexttwo"
+                        android:textSize="@dimen/_11sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/completed_task_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutAnimation="@anim/layout_animation_fall_down"
+
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+
+
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </LinearLayout>
+
+
+
+       &lt;!&ndash; <FrameLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="3dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </FrameLayout>&ndash;&gt;
+
+        &lt;!&ndash; <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+             android:id="@+id/bottom_navigation"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/_42sdp"
+             android:layout_alignParentBottom="true"
+             android:layout_gravity="bottom" />
+
+
+
+         <com.google.android.material.floatingactionbutton.FloatingActionButton
+             android:id="@+id/create_gain_expense"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="bottom|center"
+             android:layout_margin="15dp"
+             android:layout_above="@id/bottom_navigation"
+             android:src="@drawable/order_a_test"
+             app:fabSize="normal"
+             app:elevation="12dp"
+             app:borderWidth="0dp"
+             />&ndash;&gt;
+
+
+
+
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>-->
+
+    <!--<com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_weight="1"
+
+        android:layout_gravity="bottom"
+        android:id="@+id/bottom_navigation"
+        app:backgroundTint="@color/md_white_1000"
+
+
+        >
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/md_white_1000"
+            app:menu="@menu/stuff_bottom_navigation"
+
+            android:theme="@style/Widget.BottomNavigationView"
+
+         />
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>-->
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+android:layout_marginStart="@dimen/_10sdp"
+
+    android:id="@+id/item_layout_addons_choice"
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/item_layout"
+
+        >
+        <!--<ImageView
+            android:src="@color/colorTheme"
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="@dimen/_5sdp" />-->
+
+        <TextView
+            android:id="@+id/addon_detail"
+           android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:background="@drawable/rounded_corners_test_gray_bg"
+           android:layout_gravity="center"
+            android:gravity="center"
+
+            android:textSize="@dimen/_7sdp"
+            android:textColor="@color/colorPrimaryText"
+            android:text="Blood Cp   x"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_12sdp" />
+        <TextView
+            android:id="@+id/add"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+android:fontFamily="@font/poppins_bold"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/colorPrimaryBlueText"
+            android:text="   + Add  "
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:visibility="gone"
+
+         />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+      android:visibility="gone"
+        android:id="@+id/size_layout"
+        android:layout_marginBottom="@dimen/_3sdp" >
+        <TextView
+            android:id="@+id/size"
+
+            android:paddingStart="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/colorSecondaryText"
+            android:text="Product Size :"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_size"
+            android:paddingStart="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_4sdp"
+
+            android:layout_weight=".5"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/colorSecondaryText"
+            android:text="Big"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:id="@+id/layout_choice"
+        android:layout_marginBottom="@dimen/_3sdp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Choice :"
+            android:textSize="@dimen/text_small"
+            android:paddingStart="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_4sdp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_small"
+            android:paddingStart="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_4sdp"
+            android:id="@+id/choice"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/combo_layout"
+        android:visibility="gone">
+        <TextView
+
+            android:paddingStart="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/colorSecondaryText"
+            android:text="Combos Items :"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_combo"
+            android:paddingStart="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_4sdp"
+
+            android:layout_weight=".5"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/colorSecondaryText"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/combos_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:maxLines="1"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="16sp"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

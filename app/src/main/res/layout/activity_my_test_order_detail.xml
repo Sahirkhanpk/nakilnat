@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.MyTestOrderDetail"
+    android:background="@color/colorWhite">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:background="@color/toolbar_bg"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+
+
+        android:orientation="horizontal"
+        android:id="@+id/toolbarlay">
+
+        <ImageView
+
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:src="@drawable/ic_left_arrow"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/activity_vertical_margin_half"
+            android:text="Test Name"
+            android:textColor="@color/toolbar_title"
+            android:textSize="@dimen/text_large"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarlay"
+android:layout_marginStart="@dimen/_20sdp"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/main">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/btn_status"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:background="@drawable/bg_progess"
+
+
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/colorPrimaryBlueText"
+        android:text="In Progess"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_28sdp"
+        />
+
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:background="@drawable/bg_cancel"
+android:layout_marginEnd="@dimen/_20sdp"
+android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="@color/colorWhite"
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_28sdp" />
+</RelativeLayout>
+
+        <TextView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:text="Check status of your test report on each Stage"
+android:layout_marginTop="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_medium"
+            android:textColor="@color/colorTextBlack"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:background="@color/light_grey"
+       android:layout_marginEnd="@dimen/_20sdp"
+android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/view_personal_info"
+            />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:layout_marginStart="@dimen/_10sdp">
+    <ImageView
+        android:padding="@dimen/activity_vertical_margin_half"
+
+        android:background="@drawable/circle_green"
+
+        android:layout_gravity="center_vertical"
+        android:id="@+id/img_schaduled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        />
+    <TextView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:text="Scheduled"
+        android:layout_gravity="center_vertical"
+android:layout_marginStart="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/colorPrimaryTexttwo"
+        />
+
+    <TextView
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_vertical"
+android:id="@+id/tv_scheduled_date"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/colorPrimaryTexttwo"
+        />
+</LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/light_grey"
+            android:layout_marginStart="@dimen/_22sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/_10sdp">
+            <ImageView
+                android:padding="@dimen/activity_vertical_margin_half"
+
+                android:background="@drawable/circle"
+
+                android:layout_gravity="center_vertical"
+                android:id="@+id/img_sample_collected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                />
+            <TextView
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:text="Sample Collected"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:id="@+id/tv_sample_collected"
+                android:textSize="@dimen/text_medium"
+                android:textColor="@color/colorSecondaryText"
+                />
+            <TextView
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:text="Monday, 30 April 2021"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/tv_sample_collected_date"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:textSize="@dimen/text_medium"
+                android:textColor="@color/colorPrimaryTexttwo"
+                />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/light_grey"
+            android:layout_marginStart="@dimen/_22sdp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/_10sdp">
+            <ImageView
+                android:padding="@dimen/activity_vertical_margin_half"
+
+                android:background="@drawable/circle"
+
+                android:layout_gravity="center_vertical"
+                android:id="@+id/img_analyze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                />
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:text="Analyze"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:id="@+id/tv_analyze"
+                android:textSize="@dimen/text_medium"
+                android:textColor="@color/colorSecondaryText"
+                />
+
+            <TextView
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:text="Monday, 30 April 2021"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/tv_analyzed_date"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textSize="@dimen/text_medium"
+                android:textColor="@color/colorPrimaryTexttwo"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:gravity="center"
+        android:layout_gravity="center"
+      android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:id="@+id/layout_add_test"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+      android:layout_below="@+id/main"
+        android:backgroundTint="@color/colorDisabled"
+        android:background="@drawable/rounded_button_primary_color" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ Add on Test"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="@dimen/text_medium"/>
+
+    </LinearLayout>-->
+
+    <Button
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:id="@+id/layout_add_test"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+
+        android:background="@drawable/rounded_corners_white"
+        android:text="+ Add on Test"
+        android:textStyle="bold"
+        android:layout_below="@+id/main"
+        android:textColor="@color/colorWhite"
+        android:enabled="false"/>
+   <!-- <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@drawable/rounded_corners_white"
+        android:text="+ Add on Test"
+        android:layout_below="@+id/main"
+        android:textStyle="bold"
+
+        android:textColor="@color/colorWhite"
+        android:enabled="false"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/buttom">
+
+
+
+
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:id="@+id/report_ready"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+android:backgroundTint="@color/colorDisabled"
+            android:background="@drawable/rounded_button_primary_color" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Report ready"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="@dimen/text_medium"/>
+
+        </LinearLayout>-->
+        <Button
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:id="@+id/report_ready"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_size"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+
+            android:background="@drawable/rounded_corners_white"
+            android:text="Report ready"
+            android:textStyle="bold"
+            android:layout_below="@+id/main"
+            android:textColor="@color/colorWhite"
+            android:enabled="false"/>
+
+        <EditText
+            android:id="@+id/et_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@color/colorTransparent"
+
+
+            android:imeOptions="actionNext"
+            android:text="Monday,30 April 2021,11:00 am"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:padding="@dimen/_4sdp"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/_14sdp"
+            android:fontFamily="@font/poppins_bold"/>
+    </LinearLayout>
+</RelativeLayout>
